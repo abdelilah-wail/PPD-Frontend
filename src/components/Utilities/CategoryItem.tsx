@@ -1,0 +1,15 @@
+import { Link } from 'react-router-dom';
+
+interface CategoryItemProps {
+  title: string;
+  link:string;
+}
+
+function CategoryItem({title,link}:CategoryItemProps) {
+  return (
+    <Link to={link} className='p-4 bg-primary text-white rounded-2xl font-semibold
+    hover:bg-primary-dark'>{title}</Link>
+  )
+}
+
+export default CategoryItem
